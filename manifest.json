@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Form Filler",
+  "version": "1.0",
+  "description": "Automatically fills common form fields after reload",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

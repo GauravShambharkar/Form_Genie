@@ -3,67 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
-  <body class="w-full h-screen margnin-0 bg-black" >
-    <div
-      class="w-120 px-10 py-5 rounded-xl bg-gray-100 border shadow-xl border-black/40 flex flex-col gap-2"
-    >
-      <div class="flex justify-center items-center">
-        <h1 class="font-medium">Fill you detailes</h1>
+  <body>
+    <div class="form-container">
+      <div class="header">
+        <h1>Fill your details</h1>
       </div>
-      <h2 class="text-sm font-medium">First Name :</h2>
-      <input
-        class="underline rounded-sm border-1 outline text-sm px-3 py-1"
-        type="text"
-        id="name"
-        placeholder="first Name"
-      />
-      <h2 class="text-sm font-medium">Last Name :</h2>
-      <input
-        class="underline rounded-sm border-1 outline text-sm px-3 py-1"
-        type="text"
-        id="name"
-        placeholder="last Name"
-      />
-      <h2 class="text-sm font-medium">Email :</h2>
-      <input
-        class="underline rounded-sm border-1 outline text-sm px-3 py-1"
-        type="email"
-        id="email"
-        placeholder="Email"
-      />
-      <h2 class="text-sm font-medium">Your Current Address :</h2>
-      <input
-        class="underline rounded-sm border-1 outline text-sm px-3 py-1"
-        type="text"
-        id="address"
-        placeholder="Address"
-      />
+      <h2>First Name:</h2>
+      <input  type="text" id="firstName" placeholder="First Name" class="input-field"/>
+      
+      <h2>Last Name:</h2>
+      <input type="text" id="lastName" placeholder="Last Name" class="input-field"/>
+      
+      <h2>Email:</h2>
+      <input type="email" id="email" placeholder="Email" class="input-field"/>
+      
+      <h2>Your Current Address:</h2>
+      <input type="text" id="address" placeholder="Address" class="input-field"/>
 
-      <h2 class="text-sm font-medium">Mobile Number:</h2>
-      <input
-        class="underline rounded-sm border-1 outline text-sm px-3 py-1"
-        type="text"
-        id="phone"
-        placeholder="Mobile Number"
-      />
-      <h2 class="text-sm font-medium">CGPA :</h2>
-      <input
-        class="underline rounded-sm border-1 outline text-sm px-3 py-1"
-        type="text"
-        id="cgpa"
-        placeholder="CGPA"
-      />
+      <h2>Mobile Number:</h2>
+      <input type="text" id="phone" placeholder="Mobile Number" class="input-field"/>
+      
+      <h2>CGPA:</h2>
+      <input type="text" id="cgpa" placeholder="CGPA" class="input-field"/>
 
-      <div class="w-full mt-3 flex justify-end">
-        <button
-          id="saveBtn"
-          class="inline-flex items-center justify-center py-1.5 px-4 rounded-lg bg-black text-white text-sm font-medium transition-colors hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-        >
-          Save
-        </button>
+      <div class="button-container">
+        <button id="saveBtn" class="save-button">Save</button>
       </div>
     </div>
     <script src="popup.js"></script>

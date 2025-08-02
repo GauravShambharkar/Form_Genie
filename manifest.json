@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Auto Form Filler",
+  "name": "Form Genie",
   "version": "1.0",
-  "description": "Automatically fills common form fields after reload",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "description": "Automatically fills forms after reload using saved data",
+  "permissions": ["storage", "scripting", "activeTab"],
   "action": {
     "default_popup": "popup.html"
   },
@@ -13,8 +13,5 @@
       "js": ["contentScript.js"],
       "run_at": "document_idle"
     }
-  ],
-  "background": {
-    "service_worker": "background.js"
-  }
+  ]
 }

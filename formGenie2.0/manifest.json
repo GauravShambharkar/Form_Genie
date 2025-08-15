@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Form Genie🪄",
+    "version": "1.0",
+    "description": "A compact form builder that saves data as key-value pairs.",
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
